@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.PaginaUsuariosRegistrados">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnGuardar" Icon="guardar.png" Clicked="btnGuardar_Click" ></ToolbarItem>
+    <ToolbarItem x:Name="btnEliminar" Icon="eliminar.png" Clicked="btnEliminar_Click" ></ToolbarItem>
+
+  </ContentPage.ToolbarItems>
+
+
+  <ContentPage.Content>
+    <StackLayout Spacing="20" Padding="20">
+      <Entry x:Name="txtNombre" Placeholder="Nombre" Text="{Binding Nombre}"></Entry>
+      <Entry x:Name="txtApellido" Placeholder="Apellido" Text="{Binding Apellido}"></Entry>
+      <Entry x:Name="txtTelefono" Placeholder="Telefono" Text="{Binding Telefono}"></Entry>
+      <Entry x:Name="txtDireccion" Placeholder="Direccion" Text="{Binding Direccion}"></Entry>
+      <Entry x:Name="txtCorreo" Placeholder="Correo" Text="{Binding Correo}"></Entry>
+      <Entry x:Name="txtContraseña" Placeholder="Contraseña" Text="{Binding Contraseña}"></Entry>
+
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

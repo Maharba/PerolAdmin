@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.ListaPlatillos" Title="El Perolito Múzquiz" BackgroundImage="marron.jpg">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnNuevo" Icon="agregar.png" Clicked="btnNuevo_Click"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+
+  <ScrollView>
+
+    <StackLayout >
+      <StackLayout Orientation="Horizontal" Padding="5" HorizontalOptions="Center">
+        <Image Source="ca3.png" WidthRequest="50"></Image>
+      <Label Text="Platillos" HorizontalOptions="Center" FontSize="30" TextColor="White">
+          <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+              <OnPlatform.Android >segoeuib.ttf#segoeuib.ttf#</OnPlatform.Android>
+            </OnPlatform>
+          </Label.FontFamily>
+      </Label>
+      
+        </StackLayout >
+      <ListView x:Name="lsvPlatillos" ItemSelected="lsvPlatillos_Selected" Margin="5" RowHeight="70" BackgroundColor="#E0E0E0" Opacity="5">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell ImageSource="{Binding urlImagen}" Text="{Binding Nombre}" TextColor="Maroon" Detail="{Binding Descripciom}" DetailColor="Black" >
+           
+            </ImageCell>
+          </DataTemplate>
+
+        </ListView.ItemTemplate>
+      </ListView>
+ <!-- <StackLayout>
+                  <Button Text="Agregar Categoria" Clicked="Button_OnClicked"></Button>
+                </StackLayout>-->
+    </StackLayout>
+
+  </ScrollView>
+</ContentPage>

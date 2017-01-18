@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms" BackgroundColor="Maroon"
+             x:Class="PerolAdmin.GaleriaCarousel">
+
+ <ScrollView>
+  
+    
+      <StackLayout >
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+          
+          <Label Text="Lista de Fotos" FontSize="34" HorizontalOptions="Center" TextColor="White">
+            <Label.FontFamily>
+              <OnPlatform x:TypeArguments="x:String">
+                <OnPlatform.Android >segoeuib.ttf#segoeuib.ttf#</OnPlatform.Android>
+              </OnPlatform>
+            </Label.FontFamily>
+          </Label>
+        </StackLayout>
+
+
+        <StackLayout >
+          <ListView x:Name="lsvGaleria" ItemSelected="LsvGaleria_OnItemSelected" RowHeight="100">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <Image Source="{Binding urlimagen}"></Image>
+                </ViewCell>
+                    
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+      
+        </StackLayout>
+      </StackLayout >
+      
+
+ <!-- <StackLayout>
+    <Image x:Name="imgFoto" HeightRequest="250"></Image>
+    <Label x:Name="lblImgurFoto" HorizontalOptions="Center"></Label>
+    <Button x:Name="btnTomarFoto" Text="Tomar Foto"></Button>
+    <carousel:SfCarousel x:Name="Carousel" HeightRequest="150" WidthRequest="150"></carousel:SfCarousel>
+  </StackLayout>-->
+   </ScrollView>
+</ContentPage>

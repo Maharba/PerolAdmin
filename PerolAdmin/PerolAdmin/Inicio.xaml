@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.Inicio" BackgroundImage="fondCon.jpg"
+             Title="El Perolito Múzquiz">
+
+  <!--//////////////////////////DETAIL///////////////////////////////////-->
+
+  <ScrollView>
+    <StackLayout>
+
+      <Image Source="admnistradr.png" WidthRequest="400" HeightRequest="400" BackgroundColor="White" Aspect="Fill"/>
+
+   
+      <StackLayout Padding="5" Orientation="Vertical">
+        <Grid WidthRequest="400" HeightRequest="200" RowSpacing="1" ColumnSpacing="1"  HorizontalOptions="Center">
+
+
+          <Grid.RowDefinitions >
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions >
+            <ColumnDefinition  ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+          </Grid.ColumnDefinitions>
+          <Image Grid.Row="0" Grid.Column="0" x:Name="btnMenuu" Source="PlatillosAdmin.png" BackgroundColor="Transparent" WidthRequest="200" > </Image>
+          <Image Grid.Row="0" Grid.Column="1" x:Name="btnconocenos" Source="informacionAdmin.png" BackgroundColor="Transparent" WidthRequest="200"></Image>
+          
+          <Image Grid.Row="1" Grid.Column="0" x:Name="btngaleria" Source="galeriaAdmin.png" BackgroundColor="Transparent" WidthRequest="200" ></Image>
+          <Image Grid.Row="1" Grid.Column="1" x:Name="btnpromo" Source="PromocionesAdmin.png" BackgroundColor="Transparent" WidthRequest="200"></Image>
+          
+          
+         <!-- <Image Grid.Row="2" Grid.Column="0" x:Name="btnventas" Source="ventasAdmin.png" BackgroundColor="Transparent" WidthRequest="200"></Image>
+          <Image Grid.Row="2" Grid.Column="1" x:Name="btnreservac" Source="reservacionesAdmin.png" BackgroundColor="Transparent" WidthRequest="200" ></Image>-->
+          
+        </Grid>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

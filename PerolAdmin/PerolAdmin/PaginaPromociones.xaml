@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.PaginaPromociones"  Title="El Perolito Múzquiz" BackgroundImage="marron.jpg">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnGuardar" Icon="guardar.png" Clicked="btnGuardar_Click" Priority="0"></ToolbarItem>
+    <ToolbarItem x:Name="btnEliminar" Icon="eliminar.png" Clicked="btnEliminar_Click" Priority="1"></ToolbarItem>
+
+  </ContentPage.ToolbarItems>
+
+  <ScrollView>
+    <StackLayout Spacing="20" Padding="20" >
+      
+      <StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Image Source="ca1.png" WidthRequest="80"></Image>
+      <Label Text="Promociones" FontSize="34" HorizontalOptions="Center" TextColor="White">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuib.ttf#segoeuib.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      </StackLayout>
+
+        
+        
+      </StackLayout>
+      <StackLayout BackgroundColor="#E0E0E0" Opacity="5" Padding="10">
+      
+      <Label Text="Nombre:" TextColor="Maroon" FontSize="20">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Text" FontSize="20">
+        <Entry.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Entry.FontFamily>
+      </Entry>
+      
+      <Label Text="Descripción:" TextColor="Maroon" FontSize="20">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Entry x:Name="txtDescripcion" Placeholder="Descripción" Keyboard="Default" FontSize="20">
+        <Entry.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Entry.FontFamily>
+      </Entry>
+
+        <Label Text="Día:" TextColor="Maroon" FontSize="20">
+          <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+              <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+            </OnPlatform>
+          </Label.FontFamily>
+        </Label>
+        <Entry x:Name="txtdia" Placeholder="Día" Keyboard="Text">
+          <Entry.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+              <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+            </OnPlatform>
+          </Entry.FontFamily>
+        </Entry>
+      <Label Text="Imagen:" TextColor="Maroon"></Label>
+            
+        
+        
+            <StackLayout BackgroundColor="#E0E0E0" Opacity="5" Margin="10">
+
+                    <Image x:Name="imgFoto"  HeightRequest="300" BackgroundColor="Gray" Source="sinimagen.png"></Image>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                      <Button Text="Tomar" x:Name="btnTomarFoto" HeightRequest="50">
+                         <Button.FontFamily>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+        </OnPlatform>
+      </Button.FontFamily>
+                      </Button>
+                      <Button Text="Cargar" x:Name="btnCargarFoto" HeightRequest="50">
+                         <Button.FontFamily>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+        </OnPlatform>
+      </Button.FontFamily>
+                      </Button>
+                    </StackLayout>
+                    <StackLayout Padding="5">
+                      <Label x:Name="lblImgurFoto" Text="URL:" >
+                        <Label.FontFamily>
+                          <OnPlatform x:TypeArguments="x:String">
+                            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                          </OnPlatform>
+                        </Label.FontFamily>
+                      </Label>
+
+                     
+              </StackLayout>
+
+            </StackLayout>
+      </StackLayout>
+    </StackLayout>
+
+
+</ScrollView>
+</ContentPage>

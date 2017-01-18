@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.PaginaCategoria"
+             xmlns:sfCarousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnGuardar" Icon="guardar.png" Clicked="btnGuardar_Click" Priority="0"></ToolbarItem>
+    <ToolbarItem x:Name="btnEliminar" Icon="eliminar.png" Clicked="btnEliminar_Click" Priority="1"></ToolbarItem>
+
+  </ContentPage.ToolbarItems>
+
+<StackLayout>
+  
+    <StackLayout Spacing="20" Padding="20">
+      <Entry x:Name="txtNombre" Placeholder="Nombre" ></Entry>
+    </StackLayout>
+    
+    <StackLayout>
+      <Image x:Name="imgFoto"  HeightRequest="200" BackgroundColor="Gray"></Image>
+      <Label x:Name="lblImgurFoto" HorizontalOptions="Center"></Label>
+      <Button Text="Cargar foto" x:Name="btnTomarFoto"></Button>
+      <Button Text="Tomar foto" x:Name="btnTomarFoto2"></Button>
+      <Label x:Name="lblImageLink" Text="URL:"></Label>
+      
+    
+      <sfCarousel:SfCarousel x:Name="carrusel" HeightRequest="150" WidthRequest="150"></sfCarousel:SfCarousel>
+
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

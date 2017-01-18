@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.Informacion" Title="El Perolito Múzquiz" BackgroundImage="marron.jpg">
+ <ContentPage.ToolbarItems>
+   <!-- <ToolbarItem x:Name="btnNuevo" Icon="agregar.png" Clicked="btnNuevo_Click"></ToolbarItem>-->
+    <ToolbarItem x:Name="btnEditar" Icon="editar.png" Clicked="btnEditar_Click"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+<ScrollView>
+  <StackLayout Margin="10">
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Image Source="icon.png" WidthRequest="80"></Image>
+      <Label Text="El Perolito" FontSize="34" HorizontalOptions="Center" TextColor="White">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuib.ttf#segoeuib.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+    </StackLayout>
+
+
+
+    <StackLayout BackgroundColor="#E0E0E0" Opacity="5" Padding="10">
+    <!-- <ListView x:Name="lsvInformacion" ItemSelected="lsvInformacion_Selected" SeparatorVisibility="Default" SeparatorColor="Silver" RowHeight="500">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Vertical" HeightRequest="500"> 
+          
+                 <StackLayout > <Label XAlign="Center" x:Name="lblHistoria" FontSize="16" TextColor="Black" Text="{Binding Historia}" HeightRequest="100"></Label> </StackLayout>
+                 
+                 <StackLayout> <Label XAlign="Center"  x:Name="lblTelefono" FontSize="16" TextColor="Black" Text="{Binding Telefono}" HorizontalTextAlignment="Center" HeightRequest="100" ></Label></StackLayout>
+                 <StackLayout><Label XAlign="Center"  x:Name="lblDireccion" FontSize="16" TextColor="Black" Text="{Binding Direccion}" HeightRequest="100"></Label> </StackLayout>
+                <StackLayout >
+                  <Label XAlign="Center" x:Name="lblHorario" FontSize="16" TextColor="Black" Text="{Binding Horario}" HeightRequest="100"></Label>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+
+        </ListView.ItemTemplate>
+      </ListView>-->
+
+    <StackLayout Orientation="Vertical" HeightRequest="450">
+      <Label XAlign="Center" FontSize="16" TextColor="Maroon" Text="Historia:"   >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label XAlign="Center" x:Name="lblHistoria" FontSize="16"  Text="{Binding Historia}"  HeightRequest="150" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+
+      <Label XAlign="Center"  FontSize="16" TextColor="Maroon" Text="Teléfono" HorizontalTextAlignment="Center" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label XAlign="Center"  x:Name="lblTelefono" FontSize="16"  Text="{Binding Telefono}" HorizontalTextAlignment="Center"  HeightRequest="50"  >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+
+      <Label XAlign="Center"  FontSize="16" TextColor="Maroon" Text="Dirección:">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label XAlign="Center"  x:Name="lblDireccion" FontSize="16"  Text="{Binding Direccion}"  HeightRequest="50" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+
+      <Label XAlign="Center"  FontSize="16" TextColor="Maroon" Text="Horario:" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label XAlign="Center" x:Name="lblHorario" FontSize="16"  Text="{Binding Horario}" HeightRequest="50">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+
+      
+
+    </StackLayout>
+  </StackLayout>
+  
+
+  </StackLayout>
+  </ScrollView>
+</ContentPage>

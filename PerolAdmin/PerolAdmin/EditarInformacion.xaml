@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.EditarInformacion" Title="El Perolito Múzquiz" BackgroundImage="marron.jpg">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnGuardar" Icon="guardar.png" Clicked="btnGuardar_Click" Priority="0"></ToolbarItem>
+    <!--
+    <ToolbarItem x:Name="btnEliminar" Icon="eliminar.png" Clicked="btnEliminar_Click" Priority="1"></ToolbarItem>-->
+
+  </ContentPage.ToolbarItems>
+  <ScrollView>
+    <StackLayout Margin="10" >
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Image Source="icon.png" WidthRequest="80"></Image>
+      <Label Text="El Perolito" FontSize="34" HorizontalOptions="Center" TextColor="White">
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.Android >segoeuib.ttf#segoeuib.ttf#</OnPlatform.Android>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      </StackLayout>
+
+
+          <StackLayout BackgroundColor="#E0E0E0" Opacity="5" Padding="10">
+            <Label Text="Historia:" TextColor="Maroon">
+              <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Label.FontFamily>
+            </Label>
+            <!--<Entry   WidthRequest="220" x:Name="lblHistoria" FontSize="16" TextColor="Black" Placeholder="Historia"></Entry>-->
+            <Editor x:Name="lblHistoria" FontSize="16" TextColor="Black" HeightRequest="80" >
+              <Editor.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Editor.FontFamily>
+            </Editor>
+            
+            <Label Text="Teléfono:" TextColor="Maroon">
+              <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Label.FontFamily>
+            </Label>
+            <Entry  WidthRequest="220" x:Name="lblTelefono" FontSize="16" TextColor="Black" Placeholder="Telefono">
+              <Entry.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Entry.FontFamily>
+            </Entry>
+            
+            <Label Text="Dirección:" TextColor="Maroon">
+              <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Label.FontFamily>
+            </Label>
+            <Editor x:Name="lblDireccion" FontSize="16" TextColor="Black" HeightRequest="50" >
+              <Editor.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Editor.FontFamily>
+            </Editor>
+            
+            <Label Text="Horario:" TextColor="Maroon">
+              <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Label.FontFamily>
+            </Label>
+            <Editor x:Name="lblHorario" FontSize="16" TextColor="Black" HeightRequest="80" >
+              <Editor.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <OnPlatform.Android >segoeuil.ttf#segoeuil.ttf#</OnPlatform.Android>
+                </OnPlatform>
+              </Editor.FontFamily>
+            </Editor>
+            
+
+            </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

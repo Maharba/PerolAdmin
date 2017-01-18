@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerolAdmin.ListaCategorias">
+  <ContentPage.ToolbarItems>
+
+    <ToolbarItem x:Name="btnNuevo" Icon="agregar.png" Clicked="btnNuevo_Click"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  <ScrollView>
+
+    <StackLayout BackgroundColor="White">
+      <Label Text="Categorías" HorizontalOptions="Center" FontSize="25"></Label>
+      
+      <ListView x:Name="lsvCategorias" ItemSelected="lsvCategorias_Selected">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <Label Text="{Binding Nombre}"></Label>
+                <Image Source="{Binding urlImagen}" WidthRequest="30"></Image>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+
+  </ScrollView>
+</ContentPage>
